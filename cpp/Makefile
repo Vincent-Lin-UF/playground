@@ -1,8 +1,14 @@
 all:
-	g++ -std=c++11 -O2 -Wall test.cpp -o test
+	g++ -std=c++20 -O2 -Wall -Wextra test.cpp -o test
 
 run: all
-	./test
+	./test < input.txt
+
+out: all
+	./test < input.txt > output.txt
+
+template:
+	cp template.cpp test.cpp
 
 clean:
-	rm -f test test.exe
+	rm -f test

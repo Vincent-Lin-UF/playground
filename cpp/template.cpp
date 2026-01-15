@@ -10,9 +10,6 @@ static inline void fast_io() {
     cin.tie(nullptr);
 }
 
-
-
-
 static void solve_one() {
 
 }
