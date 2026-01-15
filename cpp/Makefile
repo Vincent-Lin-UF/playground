@@ -12,3 +12,4 @@ template:
 
 clean:
 	rm -f test
+	: > input.txt
